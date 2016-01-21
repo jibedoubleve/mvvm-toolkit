@@ -1,0 +1,10 @@
+<!-- This is a template of the config file. 
+	 Make a ccopy of this file, fill it as needed
+	 and feed the "deploy.nuget.ps1" with the path of
+	 the copy.
+	 
+	 /!\/!\ Don't commit this template with password or any private data in it /!\/!\
+   -->
+<configuration>
+	<apikey></apikey>	
+</configuration>

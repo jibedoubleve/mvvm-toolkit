@@ -1,0 +1,37 @@
+﻿<UserControl x:Class="Probel.Mvvm.GuiTest.Views.MailView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Probel.Mvvm.GuiTest.Views"
+             xmlns:vm="clr-namespace:Probel.Mvvm.GuiTest.ViewModels"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <UserControl.DataContext>
+        <vm:MailViewModel/>
+    </UserControl.DataContext>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <DockPanel LastChildFill="True">
+            <Label Content="To: " DockPanel.Dock="Left"/>
+            <TextBlock Text="{Binding To}" Margin="5"/>
+        </DockPanel>
+        <DockPanel Grid.Row="1" LastChildFill="True">
+            <Label DockPanel.Dock="Top" Content="Message:"/>
+            <ScrollViewer>
+            <TextBox Text="{Binding Message, UpdateSourceTrigger=PropertyChanged}" Margin="5" AcceptsReturn="True"/>
+            </ScrollViewer>
+        </DockPanel>
+        <DockPanel Grid.Row="2">
+            <DockPanel LastChildFill="False">
+                <Button DockPanel.Dock="Right" 
+                        Content="Update"
+                        Command="{Binding UpdateCommand}"/>
+            </DockPanel>
+        </DockPanel>
+    </Grid>
+</UserControl>
