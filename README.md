@@ -14,6 +14,7 @@ It contains some converters that implements `System.Windows.Data.IValueConverter
  - Provides basic implementation of `System.ComponentModel.INotifyPropertyChanged`
  - `ObservableCollectionExtensions` provides some helpers to clear or refill an `System.Collections.ObjectModel.ObservableCollection<T>`
  - `FrameworkElementExtensions` provides some helpers to retreive the ViewModel from a View (that should be a `System.Windows.FrameworkElement`
+ 
 ### Event aggregator
 All the class that implements `IEventHandler<TEventContext>` can handle events provied to the `EventAggregator`
 
