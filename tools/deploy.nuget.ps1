@@ -87,8 +87,9 @@ function Build-Version
 {	
     $date = Get-Date    
 
-    $day = $date.Day + 10
-    $v = "$v.{0}.{1:00}{2:00}" -f $date.Year,$date.Month,$day
+    $day = $date.Day + 10	
+    $month = $date.Month + 10
+    $v = "$v.{0}.{1:00}{2:00}" -f $date.Year, $month, $day
     return [String] $v
 }
 function Echo-Title([string] $message)

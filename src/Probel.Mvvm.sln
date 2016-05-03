@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Probel.Mvvm.UnitTest", "Probel.Mvvm.UnitTest\Probel.Mvvm.UnitTest.csproj", "{1A9A3D30-9A2C-463A-9512-B734D2519910}"
 EndProject
@@ -11,7 +11,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Probel.Mvvm.Gui", "Probel.M
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".global", ".global", "{5BD526D0-FE6D-4FC4-9426-0F2CD18FE79B}"
 	ProjectSection(SolutionItems) = preProject
-		..\tools\config.template.xml = ..\tools\config.template.xml
 		..\tools\deploy.nuget.ps1 = ..\tools\deploy.nuget.ps1
 		Version.cs = Version.cs
 		..\tools\Version.template.txt = ..\tools\Version.template.txt
